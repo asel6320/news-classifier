@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News Classifier</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>News Classification</h1>
+
+        <p class="subtitle">
+            Enter a news article or headline to classify it as
+            Business, Sports, or Technology.
+        </p>
+
+        <textarea
+            id="newsText"
+            placeholder="Enter news text here..."
+            rows="8"
+        ></textarea>
+
+        <button id="classifyButton">
+            Classify News
+        </button>
+
+        <div id="result" class="result hidden">
+
+            <h2>Prediction</h2>
+
+            <div class="category">
+                Category:
+                <span id="category"></span>
+            </div>
+
+            <h3>Probabilities</h3>
+
+            <div class="probability">
+                <span>Business</span>
+                <span id="businessProbability">0%</span>
+            </div>
+
+            <div class="probability">
+                <span>Sports</span>
+                <span id="sportsProbability">0%</span>
+            </div>
+
+            <div class="probability">
+                <span>Technology</span>
+                <span id="technologyProbability">0%</span>
+            </div>
+
+        </div>
+
+        <p id="errorMessage"></p>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>

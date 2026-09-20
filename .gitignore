@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Environment files
+.env
+
+# Cache
+.cache/
+
+# Large trained model
+classifier_clean/model.safetensors
